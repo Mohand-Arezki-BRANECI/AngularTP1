@@ -1,6 +1,6 @@
 <app-header></app-header>
-<body>
-    <div  ngClass="outerSquare">
+<body [ngClass]="changeColor">
+    <div  id="outerSquare">
         <app-square *ngFor=" let color of colorsArray" [bgColor]="color" (addEventEvent)="addItem($event)"></app-square>
     </div>
 </body>

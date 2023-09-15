@@ -6,14 +6,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ArezkiLouisTP1';
-  public color: string = '';
+  public changeColor: string = '';
   
   public addItem(newItem: string){
-    this.color = newItem;
-    this.changeBgColor(this.color);
-  }
-  private changeBgColor(color : string){
-    document.body.style.backgroundColor = color;
+    this.changeColor = newItem;
   }
   protected colorsArray= ["red","green","blue","yellow"];
 }
