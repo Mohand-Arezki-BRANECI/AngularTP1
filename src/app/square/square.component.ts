@@ -4,8 +4,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   selector: 'app-square',
   templateUrl: './square.component.html',
   styleUrls: ['./square.component.scss'],
-
-  
 })
 export class SquareComponent {
   @Input() bgColor : string = "";
