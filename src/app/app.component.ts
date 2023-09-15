@@ -5,12 +5,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ArezkiTP1';
+  title = 'ArezkiLouisTP1';
   public color: string = '';
   
   public addItem(newItem: string){
     this.color = newItem;
-    console.log(this.color);
     this.changeBgColor(this.color);
   }
   private changeBgColor(color : string){
